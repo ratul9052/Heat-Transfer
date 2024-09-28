@@ -65,7 +65,7 @@ ax1.grid(True)
 
 # Second subplot: Heatmap of temperature evolution
 ax2 = fig.add_subplot(1, 3, 2)
-heatmap = ax2.imshow(T, aspect='auto', cmap='hot', extent=[0, L, 0, T_final])
+heatmap = ax2.imshow(T, aspect='auto', cmap='hot', extent=[0, L, T_final, 0])
 ax2.set_title('Temperature Evolution (Heatmap)')
 ax2.set_xlabel('Position (x)')
 ax2.set_ylabel('Time (t)')
